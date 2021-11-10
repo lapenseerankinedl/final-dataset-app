@@ -1,6 +1,6 @@
 <template>
   <b-container class="home">
-    <Header msg="Header" />
+    <Header msg="Motor Vehicle Statistics" />
     <b-row>
       <b-col class="comp-head">
         <ODR msg="Total Occupant Death Rate" />
@@ -12,7 +12,7 @@
         <TPSB msg="Total Passenger Seat Belts" />
       </b-col>
     </b-row>
-    <Footer msg="Footer" />
+    <Footer msg="Data retrieved from the CDC" />
   </b-container>
 </template>
 
