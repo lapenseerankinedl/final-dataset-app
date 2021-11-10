@@ -24,11 +24,7 @@ export default {
   margin: 0 auto;
   background: #ececec;
 }
-<<<<<<< HEAD
-</style>
-=======
 .header h1 {
   font-size: 40px;
 }
 </style>
->>>>>>> bdd829c6a4159444916f45935182e995b7ead116
