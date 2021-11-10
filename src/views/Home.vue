@@ -1,11 +1,11 @@
 <template>
   <div class="home">
-    <Header msg="Header" />
+    <Header msg="Motor Vehicle Statistics" />
     <div class="main-section">
       <HelloWorld msg="The Main Page" />
     </div>
 
-    <Footer msg="Footer" />
+    <Footer msg="Data retrieved from the CDC" />
   </div>
 </template>
 

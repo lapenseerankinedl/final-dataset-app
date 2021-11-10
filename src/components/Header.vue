@@ -16,11 +16,15 @@ export default {
 </script>
 
 <style lang="scss">
+
 .header {
   display: flex;
   justify-content: space-evenly;
   padding: 10px 10px;
   margin: 0 auto;
   background: #ececec;
+}
+.header h1 {
+  font-size: 40px;
 }
 </style>
