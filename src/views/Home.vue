@@ -10,7 +10,7 @@
           <IDDR msg="Impaired Driving Death Rate" />
         </b-col>
         <b-col class="comp-head">
-          <TPSB msg="Total Passenger Seat Belts" />
+          <TPSB msg="% of Seat Belt Wearing" />
         </b-col>
       </b-row>
       <Footer msg="Data retrieved from the CDC" />
@@ -38,4 +38,4 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss"></style>

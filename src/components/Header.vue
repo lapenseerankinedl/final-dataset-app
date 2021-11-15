@@ -15,7 +15,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .header {
   width: 100%;
   display: flex;
@@ -28,5 +28,8 @@ export default {
 }
 .header h1 {
   font-size: 40px;
+}
+a {
+  text-decoration: none;
 }
 </style>

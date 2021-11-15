@@ -2,7 +2,7 @@
     <div>
         <Header msg="Motor Vehicle Statistics" />
         <b-container>
-            <h2>Total Occupant Death Rate - 2012</h2>
+            <h2>{{ hdr }}</h2>
             <b-table striped hover :items="items"></b-table>
         </b-container>
         <Footer msg="Data retrieved from the CDC" />
@@ -15,7 +15,11 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
-    name: "todr",
+    name: 'Results',
+    props: {
+        url: String,
+        hdr: String
+    },
     components: {
         Header,
         Footer
@@ -26,7 +30,7 @@ export default {
         }
     },
     created() {
-        axios.get("https://data.cdc.gov/resource/rqg5-mkef.json")
+        axios.get(this.url)
         .then(res => {
             this.items = res.data;
         })
