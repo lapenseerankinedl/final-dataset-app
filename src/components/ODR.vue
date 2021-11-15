@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="odr">
-      <h1>{{ msg }}</h1>
+      <router-link to="/todr"><h1>{{ msg }}</h1></router-link>
     </div>
   </section>
 </template>

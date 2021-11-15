@@ -23,6 +23,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/todr",
+    name: "Total Occupant Death Rate",
+    component: () => 
+      import(/* webpackChunkName: "todr" */ "../components/todr.vue"),
+  },
 ];
 
 const router = new VueRouter({
