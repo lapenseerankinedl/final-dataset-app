@@ -19,12 +19,12 @@ export default {
 <style lang="scss">
 .footer {
   position: fixed;
-  left: 10px;
-  right: 10px;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-evenly;
   padding: 10px 10px;
-  bottom: 10px;
+  bottom: 0;
   margin-bottom: 0px;
   background: #ececec;
   font-size: 20px;

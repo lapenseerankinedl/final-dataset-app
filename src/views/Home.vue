@@ -1,19 +1,21 @@
 <template>
-  <b-container class="home">
+  <div>
     <Header msg="Motor Vehicle Statistics" />
-    <b-row>
-      <b-col class="comp-head">
-        <ODR msg="Total Occupant Death Rate" />
-      </b-col>
-      <b-col class="comp-head">
-        <IDDR msg="Impaired Driving Death Rate" />
-      </b-col>
-      <b-col class="comp-head">
-        <TPSB msg="Total Passenger Seat Belts" />
-      </b-col>
-    </b-row>
-    <Footer msg="Data retrieved from the CDC" />
-  </b-container>
+    <b-container class="home mt-4">
+      <b-row>
+        <b-col class="comp-head">
+          <ODR msg="Total Occupant Death Rate" />
+        </b-col>
+        <b-col class="comp-head">
+          <IDDR msg="Impaired Driving Death Rate" />
+        </b-col>
+        <b-col class="comp-head">
+          <TPSB msg="% of Seat Belt Wearing" />
+        </b-col>
+      </b-row>
+      <Footer msg="Data retrieved from the CDC" />
+    </b-container>
+  </div>
 </template>
 
 <script>
@@ -36,4 +38,4 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss"></style>

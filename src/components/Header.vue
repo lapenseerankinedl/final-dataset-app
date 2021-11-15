@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="header">
-      <h1>{{ msg }}</h1>
+      <router-link to="/"><h1>{{ msg }}</h1></router-link>
     </div>
   </section>
 </template>
@@ -15,10 +15,12 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
+<style scoped lang="scss">
 .header {
+  width: 100%;
   display: flex;
+  left: 0;
+  right: 0;
   justify-content: space-evenly;
   padding: 10px 10px;
   margin: 0 auto;
@@ -26,5 +28,8 @@ export default {
 }
 .header h1 {
   font-size: 40px;
+}
+a {
+  text-decoration: none;
 }
 </style>
