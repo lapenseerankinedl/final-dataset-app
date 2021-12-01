@@ -3,12 +3,18 @@
         <Header msg="Motor Vehicle Statistics" />
         <b-container>
             <h2>{{ hdr }}</h2>
-            <b-input-group>
-                <b-input v-model="filter" placeholder="Search"></b-input>
-                <b-input-group-append>
-                    <b-button :disabled="!filter" @click="filter = ''">Clear</b-button>
-                </b-input-group-append>
-            </b-input-group>
+            <b-row>
+                <b-input-group>
+                    <b-col cols="11">
+                        <b-input v-model="filter" placeholder="Search" ></b-input>
+                    </b-col>
+                    <b-col cols="1">
+                        <b-input-group-append>
+                            <b-button :disabled="!filter" @click="filter = ''">Clear</b-button>
+                        </b-input-group-append>
+                    </b-col>
+                </b-input-group>
+            </b-row>
             <b-table striped hover :items="items" :filter="filter"></b-table>
         </b-container>
         <Footer msg="Data retrieved from the CDC" />
@@ -49,5 +55,4 @@ export default {
 </script>
 
 <style scoped="scss">
-
 </style>
