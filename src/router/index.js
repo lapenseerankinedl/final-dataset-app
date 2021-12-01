@@ -28,7 +28,7 @@ const routes = [
     name: "Results",
     component: () => 
       import(/* webpackChunkName: "todr" */ "../components/results.vue"),
-    props: true
+    props: true,
   },
 ];
 

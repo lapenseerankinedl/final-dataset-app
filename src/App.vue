@@ -25,4 +25,8 @@
     }
   }
 }
+
+a {
+  color: #840808 !important;
+}
 </style>
