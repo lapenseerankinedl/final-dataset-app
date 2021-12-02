@@ -46,11 +46,19 @@ export default {
         axios.get(this.url)
         .then(res => {
             this.items = res.data;
+
+            for (var i = 0; i < this.items.length; i++) {
+                Object.keys(this.items[i]).some(j => { 
+                    if(j.endsWith('2014')){
+                        this.$delete(this.items[i], j);
+                    }
+                });
+            }
         })
         .catch(error => {
             console.error(error);
         })
-    },
+    }
 }
 </script>
 
