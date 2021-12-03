@@ -2,7 +2,12 @@
   <section>
     <div class="footer">
       <h1>{{ msg }}</h1>
-      <a href="https://data.cdc.gov/browse?category=Injury+%26+Violence&limitTo=datasets&page=1" target="_blank">CDC</a>
+      <a
+        href="https://data.cdc.gov/browse?category=Injury+%26+Violence&limitTo=datasets&page=1"
+        target="_blank"
+        data-test-id="cdc-link"
+        >CDC</a
+      >
     </div>
   </section>
 </template>

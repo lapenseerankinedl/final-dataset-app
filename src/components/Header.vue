@@ -1,7 +1,9 @@
 <template>
   <section>
     <div class="header">
-      <router-link to="/"><h1>{{ msg }}</h1></router-link>
+      <router-link to="/"
+        ><h1 data-test-id="Main-Page-link">{{ msg }}</h1></router-link
+      >
     </div>
   </section>
 </template>

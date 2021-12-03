@@ -13,8 +13,8 @@
           <TPSB msg="% of Seat Belt Wearing" />
         </b-col>
       </b-row>
-      <Footer msg="Data retrieved from the CDC" />
     </b-container>
+    <Footer msg="Data retrieved from the CDC" />
   </div>
 </template>
 
