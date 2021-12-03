@@ -6,20 +6,34 @@
       <b-row>
         <b-input-group>
           <b-col cols="11">
-            <b-input v-model="filter" placeholder="Search" data-test-id="Search-Bar"></b-input>
+            <b-input
+              v-model="filter"
+              placeholder="Search"
+              data-test-id="Search-Bar"
+            ></b-input>
           </b-col>
           <b-col cols="1">
             <b-input-group-append>
-              <b-button :disabled="!filter" @click="filter = ''"
-                data-test-id="Clear-Button">Clear</b-button
+              <b-button
+                :disabled="!filter"
+                @click="filter = ''"
+                data-test-id="Clear-Button"
+                >Clear</b-button
               >
             </b-input-group-append>
           </b-col>
         </b-input-group>
       </b-row>
-      <b-table striped hover :items="items" :filter="filter" data-test-id="Results-Table"></b-table>
+      <b-table
+        striped
+        hover
+        :items="items"
+        :filter="filter"
+        data-test-id="Results-Table"
+        class="results-table"
+      ></b-table>
+      <Footer msg="Data retrieved from the CDC" />
     </b-container>
-    <Footer msg="Data retrieved from the CDC" />
   </div>
 </template>
 
@@ -65,4 +79,8 @@ export default {
 };
 </script>
 
-<style scoped="scss"></style>
+<style scoped="scss">
+.results-table {
+  margin-bottom: 5em;  
+}
+</style>

@@ -625,21 +625,18 @@ describe("Clicks on ", () => {
     
   });
 });
-
 describe("Clicks on ", () => {
   it("Clicks on link to ", () => {
     cy.visit("/");
     
   });
 });
-
 describe("Clicks on ", () => {
   it("Clicks on link to ", () => {
     cy.visit("/");
     
   });
 });
-
 describe("Clicks on ", () => {
   it("Clicks on link to ", () => {
     cy.visit("/");
